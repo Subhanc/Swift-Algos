@@ -134,14 +134,12 @@ func inorderTraversal(_ root: TreeNode?) {
 
 /* BFS */
 
-func breathFirstSearch(_ root: TreeNode?) {
-    var queue = Queue<TreeNode>()
-
-    if let node = root {
-        queue.add(node)
-    } else {
+func breathFirstSearch(_ root: TreeNode?) {    
+    guard let node = root else {
         return
     }
+    var queue = Queue<TreeNode>()
+    queue.add(node)
 
     while !queue.isEmpty {
         if let popped = queue.remove() {

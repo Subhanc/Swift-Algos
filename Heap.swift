@@ -14,13 +14,8 @@ struct Heap<Element> {
       }
     }
     
-    var isEmpty : Bool {
-        return elements.isEmpty
-    }
-    
-    var count : Int {
-        return elements.count
-    }
+    var isEmpty : Bool {  return elements.isEmpty}
+    var count : Int { return elements.count }
     
     func peek() -> Element? {
       return elements.first

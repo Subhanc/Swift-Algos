@@ -8,7 +8,7 @@ class Solution {
             let course = item[0]
             let preqs = item[1]
             indegree[course] += 1
-            graph[preqs, `1default: []].append(course) // Notice how this is opposite, representing the edge. 
+            graph[preqs, `default: []].append(course) // Notice how this is opposite, representing the edge. 
         }
     
         var count = 0

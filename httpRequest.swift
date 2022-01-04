@@ -14,11 +14,7 @@ class Solution {
     case toDos = "todos/"
   }
 
-  func request<T: Codable>(
-    url: String = "", objectType: T.Type,
-    completion:
-      @escaping (Result<T>) -> Void
-  ) {
+  func request<T: Codable>(url: String = "", objectType: T.Type, completion: @escaping (Result<T>) -> Void) {
     guard let url = URL(string: url + Path.toDos.rawValue + "1") else {
       return
     }

@@ -21,9 +21,9 @@ class ConnectFour {
                 case vertical: 
                     return [[0, 1], [0, -1]]
                 case leftDiagonal:
-                    return [[1, 1], [1, -1]]
+                    return [[1, 1], [-1, -1]]
                 case rightDiagonal:
-                    return [[-1, 1], [-1, -1]]
+                    return [[-1, 1], [1, -1]]
             }
         }
     }

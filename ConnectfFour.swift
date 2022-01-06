@@ -60,7 +60,7 @@ class ConnectFour {
         return false
     }
     
-    func check(_ player: Int, move: [Int]_ direction: Direction) -> Bool { 
+    func check(_ player: Int, move: [Int], _ direction: Direction) -> Bool { 
         let directions = Direction.getDirections(direction) 
         
         var x = move[0] 
